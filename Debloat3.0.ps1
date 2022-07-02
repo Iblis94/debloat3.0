@@ -251,9 +251,9 @@ $inputXML = @"
                             <CheckBox Name="installonlyoffice" Content="Only Office" Margin="5,0,0,0" Foreground="White"/>
 
                             <Label Content="Scripts" Margin="0,0,0,0" FontWeight="Bold" Background="#00000000" Foreground="White"/>
-                            <CheckBox Name="script1" Content="Uninstall EDGE" Margin="5,0,0,0" Foreground="White"/>
-                            <CheckBox Name="script2" Content="Clean WUCache" Margin="5,0,0,0" Foreground="White"/>
-                            <CheckBox Name="script3" Content="Delete All Temp" Margin="5,0,0,0" Foreground="White"/>
+                            <CheckBox Name="installscript1" Content="Uninstall EDGE" Margin="5,0,0,0" Foreground="White"/>
+                            <CheckBox Name="installscript2" Content="Clean WUCache" Margin="5,0,0,0" Foreground="White"/>
+                            <CheckBox Name="installscript3" Content="Delete All Temp" Margin="5,0,0,0" Foreground="White"/>
 
                             <Label Content="Reading" Margin="0,0,0,0" FontWeight="Bold" Background="#00000000" Foreground="White"/>
                             <CheckBox Name="installcalibre" Content="Calibre" Margin="5,0,0,0" Foreground="White"/>
@@ -2999,17 +2999,17 @@ $WPFTab2P1.Add_Click({
         $WPFinstallpdf24.IsChecked = $false
     }
     If ( $WPFinstallscript1.IsChecked -eq $true ) { 
-        Start-BitsTransfer -Source "https://raw.githubusercontent.com/Kakihara73/Uninstall-new-EDGE/main/Uninstall_newEDGE.cmd" -Destination Uninstall_newEDGE.cmd
+        Start-Process powershell.exe -ArgumentList "Start-BitsTransfer -Source 'https://raw.githubusercontent.com/Kakihara73/Uninstall-new-EDGE/main/Uninstall_newEDGE.cmd' -Destination Uninstall_newEDGE.cmd" -Wait -WindowStyle Maximized
         ./Uninstall_newEDGE.cmd /quiet
         $WPFinstallscript3.IsChecked = $false
     }
     If ( $WPFinstallscript2.IsChecked -eq $true ) { 
-        Start-BitsTransfer -Source "https://raw.githubusercontent.com/Kakihara73/cleanWUcache/main/cleanWUcache.cmd" -Destination cleanWUcache.cmd
+        Start-Process powershell.exe -ArgumentList "Start-BitsTransfer -Source 'https://raw.githubusercontent.com/Kakihara73/cleanWUcache/main/cleanWUcache.cmd' -Destination cleanWUcache.cmd" -Wait -WindowStyle Maximized
         ./cleanWUcache.cmd /quiet
         $WPFinstallscript3.IsChecked = $false
     }
     If ( $WPFinstallscript3.IsChecked -eq $true ) { 
-        Start-BitsTransfer -Source "https://raw.githubusercontent.com/Kakihara73/Delete-ALL-Temp/main/DELALLTEMP.cmd" -Destination DELALLTEMP.cmd
+        Start-Process powershell.exe -ArgumentList "Start-BitsTransfer -Source 'https://raw.githubusercontent.com/Kakihara73/Delete-ALL-Temp/main/DELALLTEMP.cmd' -Destination DELALLTEMP.cmd" -Wait -WindowStyle Maximized
         ./DELALLTEMP.cmd /quiet
         $WPFinstallscript3.IsChecked = $false
     }
@@ -7456,15 +7456,15 @@ $WPFTab12P31.Add_Click({
     $WPFr5.IsChecked = $false
     }
         If ( $WPFr6.IsChecked -eq $true ) {
-    $wingetinstall.Add("Start-BitsTransfer -Source 'https://download.sysinternals.com/files/TCPView.zip' -Destination 'C:\Users\Public\Desktop'")
+    Start-BitsTransfer -Source "https://download.sysinternals.com/files/TCPView.zip" -Destination "C:\Users\Public\Desktop"
     $WPFr6.IsChecked = $false
     }
         If ( $WPFr7.IsChecked -eq $true ) {
-    $wingetinstall.Add("Start-BitsTransfer -Source 'https://download.sysinternals.com/files/SysinternalsSuite.zip' -Destination 'C:\Users\Public\Desktop'")
+    Start-BitsTransfer -Source "https://download.sysinternals.com/files/SysinternalsSuite.zip" -Destination "C:\Users\Public\Desktop"
     $WPFr7.IsChecked = $false
     }
         If ( $WPFr8.IsChecked -eq $true ) {
-    $wingetinstall.Add("Start-BitsTransfer -Source 'https://download.sysinternals.com/files/ProcessExplorer.zip' -Destination 'C:\Users\Public\Desktop'")
+    Start-BitsTransfer -Source "https://download.sysinternals.com/files/ProcessExplorer.zip" -Destination "C:\Users\Public\Desktop"
     $WPFr8.IsChecked = $false
     }
         If ( $WPFr9.IsChecked -eq $true ) {
@@ -7484,7 +7484,7 @@ $WPFTab12P31.Add_Click({
     $WPFr12.IsChecked = $false
     }
         If ( $WPFr13.IsChecked -eq $true ) {
-    $wingetinstall.Add("Start-BitsTransfer -Source 'https://www.ocbase.com/download/edition:Personal' -Destination 'C:\Users\Public\Desktop'")
+    Start-Process powershell.exe -ArgumentList "Start-BitsTransfer -Source 'https://www.ocbase.com/download/edition:Personal' -Destination 'C:\Users\Public\Desktop'" -Wait -WindowStyle Maximized
     $WPFr13.IsChecked = $false
     }
         If ( $WPFr14.IsChecked -eq $true ) {
@@ -7496,7 +7496,7 @@ $WPFTab12P31.Add_Click({
     $WPFr15.IsChecked = $false
     }
         If ( $WPFr16.IsChecked -eq $true ) {
-    $wingetinstall.Add("Start-BitsTransfer -Source 'https://download.sysinternals.com/files/Autoruns.zip' -Destination 'C:\Users\Public\Desktop'")
+    Start-Process powershell.exe -ArgumentList "Start-BitsTransfer -Source 'https://download.sysinternals.com/files/Autoruns.zip' -Destination 'C:\Users\Public\Desktop'" -Wait -WindowStyle Maximized
     $WPFr16.IsChecked = $false
     }
         If ( $WPFr17.IsChecked -eq $true ) {
