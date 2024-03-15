@@ -13,6 +13,6 @@ irm -Uri "https://shorturl.at/auHS4" | iex
 
 # Overview
 
-![Pagina 1](resources/Pagina%201.jpg)
-![Pagina 2](resources/Pagina%202.jpg)
-![Pagina 3](resources/Pagine%203.jpg)
+![Pagina 1](assets/Readme/Pagina%201.jpg)
+![Pagina 2](assets/Readme/Pagina%202.jpg)
+![Pagina 3](assets/Readme/Pagine%203.jpg)

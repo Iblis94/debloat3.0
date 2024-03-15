@@ -68,8 +68,8 @@ $inputXML = @"
             <Button Content="Winget" HorizontalAlignment="Left" VerticalAlignment="Top"  Foreground="#ffffff" BorderThickness="0,0,0,0" FontWeight="Bold" Height="20" Width="100" Name="Tab2A" Margin="30,75,0,0" Background="#FF1A2733"/>
             <Button Content="     Bloatware" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#ffffff" BorderThickness="0,0,0,0" FontWeight="Bold" Height="20" Width="100" Margin="30,95,0,0" Name="Tab3A" Background="#FF1A2733"/>
             <Button Content="Privacy" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#ffffff" BorderThickness="0,0,0,0" FontWeight="Bold" Height="20" Width="100" Margin="30,151,0,0" Name="Tab4A" Background="#FF1A2733"/>
-            <Image Height="18" Width="18" Name="Powershell" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Powershell.png" Margin="32,76,780,308"/>
-            <Image Height="18" Width="18" Name="Bloatware" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Bloatware.png" Margin="31,95,781,289"/>
+            <Image Height="18" Width="18" Name="Powershell" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Powershell.png" Margin="32,76,780,308"/>
+            <Image Height="18" Width="18" Name="Bloatware" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Bloatware.png" Margin="31,95,781,289"/>
             <TextBlock TextWrapping="Wrap" Text="TWEAKS" Foreground="#FF777777" Margin="30,131,0,252" HorizontalAlignment="Left" FontFamily="Segoe UI" Width="76" FontSize="14"/>
             <Button Content="Utility  " HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF1A2733" Foreground="#ffffff" BorderThickness="0,0,0,0" FontWeight="Bold" Height="20" Width="100" Margin="30,171,0,0" Name="Tab5A"/>
             <Button Content="   Defender" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF1A2733" Foreground="#ffffff" BorderThickness="0,0,0,0" FontWeight="Bold" Height="20" Width="100" Margin="30,0,0,0" Name="Tab6A"/>
@@ -82,15 +82,15 @@ $inputXML = @"
             <Button Content="   Repair PC" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF1A2733" Foreground="#ffffff" BorderThickness="0,0,0,0" FontWeight="Bold" Height="20" Width="100" Margin="30,349,0,0" Name="Tab12A"/>
             <TextBlock HorizontalAlignment="Left" Margin="48,391,0,0" TextWrapping="NoWrap" Text="v 3.2.0 by @Paki94x" VerticalAlignment="Top" Foreground="#FF6A6A6A" Height="18" Width="70" FontStyle="Normal" FontWeight="Light" FontStretch="Expanded" TextTrimming="CharacterEllipsis" FontSize="8"/>
             <TextBlock HorizontalAlignment="Left" Margin="28,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="7" Foreground="#FF777777"><Run FontStyle="Italic" Text="Follow us on Telegram @windowsitaly"/></TextBlock>
-            <Image Height="18" Width="18" Name="Privacy" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Privacy.png" Margin="32,152,780,232"/>
-            <Image Height="18" Width="18" Name="Utility" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Utility.png" Margin="32,172,780,212"/>
-            <Image Height="20" Width="20" Name="Defender" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Defender.png" Margin="31,191,779,191"/>
-            <Image Height="18" Width="18" Name="Update" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Update.png" Margin="32,213,780,171"/>
-            <Image Height="18" Width="18" Name="Application" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Application.PNG" Margin="32,233,780,151"/>
-            <Image Height="18" Width="18" Name="System" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/System.png" Margin="32,253,780,131"/>
-            <Image Height="18" Width="18" Name="Explorer" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Explorer.png" Margin="32,273,780,111"/>
-            <Image Height="18" Width="18" Name="Taskbar" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Taskbar.png" Margin="32,292,780,92"/>
-            <Image Height="18" Width="18" Name="RepairPC" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Repair%20PC.PNG" Margin="32,350,780,34"/>
+            <Image Height="18" Width="18" Name="Privacy" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Privacy.png" Margin="32,152,780,232"/>
+            <Image Height="18" Width="18" Name="Utility" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Utility.png" Margin="32,172,780,212"/>
+            <Image Height="20" Width="20" Name="Defender" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Defender.png" Margin="31,191,779,191"/>
+            <Image Height="18" Width="18" Name="Update" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Update.png" Margin="32,213,780,171"/>
+            <Image Height="18" Width="18" Name="Application" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Application.PNG" Margin="32,233,780,151"/>
+            <Image Height="18" Width="18" Name="System" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/System.png" Margin="32,253,780,131"/>
+            <Image Height="18" Width="18" Name="Explorer" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Explorer.png" Margin="32,273,780,111"/>
+            <Image Height="18" Width="18" Name="Taskbar" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Taskbar.png" Margin="32,292,780,92"/>
+            <Image Height="18" Width="18" Name="RepairPC" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Repair%20PC.PNG" Margin="32,350,780,34"/>
 
             <TabControl Margin="160,0,10,0" Grid.Column="1" Padding="-0.5" Name="TabNav" SelectedIndex="0" Background="#FF1F272E">
                 <TabItem Header="EzMode" Visibility="Collapsed" Name="Tab1">
@@ -100,7 +100,7 @@ $inputXML = @"
                             <ColumnDefinition Width="250"/>
                         </Grid.ColumnDefinitions>
                         <StackPanel Margin="0,25,0,0" Grid.Column="0">
-                        <Image Height="400" Width="400" Name="Logo" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Logo%20Debloat.png" Margin="0,-70,0,0"/>
+                        <Image Height="400" Width="400" Name="Logo" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Logo%20Debloat.png" Margin="0,-70,0,0"/>
                             <Button Content="Windows 10 Presets" Width="150" Height="30" Margin="-165,-50,0,0" Foreground="White" BorderBrush="#FF777777" FontWeight="Bold" Name="Tab1P1">
                                 <Button.Background>
                                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -637,7 +637,7 @@ $inputXML = @"
                                     <Style/>
                                 </Button.Style>
                             </Button>
-                            <Image Height="37" Width="130" Name="Legends1" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Legends.png" Margin="30,0,0,0"/>
+                            <Image Height="37" Width="130" Name="Legends1" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Legends.png" Margin="30,0,0,0"/>
                         </StackPanel>
                     </Grid>
                 </TabItem>
@@ -747,7 +747,7 @@ $inputXML = @"
                                     <Style/>
                                 </Button.Style>
                             </Button>
-                            <Image Height="37" Width="130" Name="Legends2" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Legends.png" Margin="30,0,0,0"/>
+                            <Image Height="37" Width="130" Name="Legends2" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Legends.png" Margin="30,0,0,0"/>
                         </StackPanel>
                     </Grid>
                 </TabItem>
@@ -868,7 +868,7 @@ $inputXML = @"
                                     <Style/>
                                 </Button.Style>
                             </Button>
-                            <Image Height="37" Width="130" Name="Legends3" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Legends.png" Margin="30,0,0,0"/>
+                            <Image Height="37" Width="130" Name="Legends3" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Legends.png" Margin="30,0,0,0"/>
                         </StackPanel>
                     </Grid>
                 </TabItem>
@@ -952,7 +952,7 @@ $inputXML = @"
                                     <Style/>
                                 </Button.Style>
                             </Button>
-                            <Image Height="37" Width="130" Name="Legends4" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Legends.png" Margin="30,0,0,0"/>
+                            <Image Height="37" Width="130" Name="Legends4" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Legends.png" Margin="30,0,0,0"/>
                         </StackPanel>
                     </Grid>
                 </TabItem>
@@ -1064,7 +1064,7 @@ $inputXML = @"
                                     <Style/>
                                 </Button.Style>
                             </Button>
-                            <Image Height="37" Width="130" Name="Legends5" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Legends.png" Margin="30,0,0,0"/>
+                            <Image Height="37" Width="130" Name="Legends5" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Legends.png" Margin="30,0,0,0"/>
                         </StackPanel>
 
                     </Grid>
@@ -1184,7 +1184,7 @@ $inputXML = @"
                                     <Style/>
                                 </Button.Style>
                             </Button>
-                            <Image Height="37" Width="130" Name="Legends6" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Legends.png" Margin="30,0,0,0"/>
+                            <Image Height="37" Width="130" Name="Legends6" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Legends.png" Margin="30,0,0,0"/>
                         </StackPanel>
                     </Grid>
                 </TabItem>
@@ -1301,7 +1301,7 @@ $inputXML = @"
                                     <Style/>
                                 </Button.Style>
                             </Button>
-                            <Image Height="37" Width="130" Name="Legends7" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Legends.png" Margin="30,0,0,0"/>
+                            <Image Height="37" Width="130" Name="Legends7" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Legends.png" Margin="30,0,0,0"/>
                         </StackPanel>
                     </Grid>
                 </TabItem>
@@ -1420,7 +1420,7 @@ $inputXML = @"
                                     <Style/>
                                 </Button.Style>
                             </Button>
-                            <Image Height="37" Width="130" Name="Legends8" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/resources/Legends.png" Margin="30,0,0,0"/>
+                            <Image Height="37" Width="130" Name="Legends8" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/Iblis94/debloat3.0/main/assets/Tool/Legends.png" Margin="30,0,0,0"/>
                         </StackPanel>
                     </Grid>
                 </TabItem>
