@@ -63,8 +63,8 @@ exit
 :Custom_iso
 cls
 echo "Downloading"
-powershell -command "$wc = New-Object net.webclient; $msu_url = 'https://raw.githubusercontent.com/daboynb/windows_scripts/main/windows_custom_iso_maker/Downloader.ps1'; $local_msu_url = \"$env:APPDATA\Downloader.ps1\"; $wc.DownloadFile($msu_url, $local_msu_url);"
-powershell -command "PowerShell -ExecutionPolicy Bypass -File \"$env:APPDATA\Downloader.ps1\""
+powershell -command "$wc = New-Object net.webclient; $msu_url = 'https://raw.githubusercontent.com/daboynb/windows_scripts/main/windows_custom_iso_maker/downloader.ps1'; $local_msu_url = \"$env:APPDATA\downloader.ps1\"; $wc.DownloadFile($msu_url, $local_msu_url);"
+powershell -command "PowerShell -ExecutionPolicy Bypass -File \"$env:APPDATA\downloader.ps1\""
 exit
 
 :Iso_Pronte
