@@ -31,7 +31,7 @@ goto menu
 :disattiva_swap
 echo Disattivazione dello swap...
 reg add "HKLM\System\CurrentControlSet\Control\Session Manager\Memory Management" /v PagingFiles /t REG_MULTI_SZ /d "" /f
-echo Lo swap è stato disattivato.
+echo Lo swap e' stato disattivato.
 pause
 goto fine
 
@@ -45,4 +45,13 @@ pause
 goto fine
 
 :fine
+
+REM Richiesta di riavvio del sistema
+set /p RESTART=Vuoi riavviare il sistema ora? (S/N): 
+if /i "%RESTART%"=="S" (
+    shutdown /r /t 0
+) else (
+    echo Riavvio posticipato o annullato.
+)
+
 endlocal
