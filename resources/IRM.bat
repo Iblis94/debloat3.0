@@ -113,15 +113,16 @@ if %_erl%==3 goto :MainMenu
 goto :Iso_Pronte
 
 :win10
-start "" "https://tinyurl.com/4kurby7f"
+start "" "https://1drv.ms/f/s!AkZ4mtahaej6kU-wvypG4C8J9bW3?e=zcwf9q"
 exit
 
 :win11
-start "" "https://tinyurl.com/37z6rx3y"
+start "" "https://1drv.ms/u/s!AkZ4mtahaej6kU4iHTUTlb-pYoJm?e=tKE5xl"
 exit
 
 :Script
 cls
+echo "Downloading"
 IF exist "C:\Users\%USERNAME%\Desktop" (
   set "path_to_use=C:\Users\%USERNAME%\Desktop"
 )
