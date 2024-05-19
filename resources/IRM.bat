@@ -85,7 +85,7 @@ echo.
 echo 			  [2] Windows 11
 echo.
 echo.
-echo.
+echo 			  [3] Vecchie ISO
 echo.
 echo.
 echo.
@@ -103,13 +103,14 @@ echo.
 echo.
 echo 			   [0] Indietro 
 echo.
-echo	- - - - - - - - Digita il numero desiderato [1,2,0] - - - - - - - -
-choice /c:120 /N
+echo	- - - - - - - - Digita il numero desiderato [1,2,3,0] - - - - - - -
+choice /c:1230 /N
 set _erl=%errorlevel%
 
 if %_erl%==1 goto :win10
 if %_erl%==2 goto :win11
-if %_erl%==3 goto :MainMenu
+if %_erl%==3 goto :others
+if %_erl%==4 goto :MainMenu
 goto :Iso_Pronte
 
 :win10
@@ -118,6 +119,10 @@ exit
 
 :win11
 start "" "https://1drv.ms/u/s!AkZ4mtahaej6kU4iHTUTlb-pYoJm?e=tKE5xl"
+exit
+
+:others
+start "" "https://1drv.ms/f/s!AkZ4mtahaej6kH4_Zk8nXVIxkiJL?e=f6z05c"
 exit
 
 :Script
