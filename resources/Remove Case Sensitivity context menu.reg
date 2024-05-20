@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\Directory\shell\CaseSensitivityMenu]
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\CaseSensitivityMenu]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\CaseSensitivityMenu]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\CaseSensitivityMenuAdmin]
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\CaseSensitivityMenuAdmin]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\CaseSensitivityMenuAdmin]

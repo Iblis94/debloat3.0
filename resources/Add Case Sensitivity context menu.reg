@@ -1,0 +1,155 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenu]
+"MUIVerb"="Case sensitivity"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenu\Shell\01View]
+"MUIVerb"="View case sensitivity mode"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenu\Shell\01View\command]
+@="cmd /k fsutil.exe file queryCaseSensitiveInfo \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenu\Shell\02Enable]
+"MUIVerb"="Enable case sensitivity mode"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenu\Shell\02Enable\command]
+@="cmd /k fsutil.exe file setCaseSensitiveInfo \"%1\" enable"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenu\Shell\03Disable]
+"MUIVerb"="Disable case sensitivity mode"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenu\Shell\03Disable\command]
+@="cmd /k fsutil.exe file setCaseSensitiveInfo \"%1\" disable"
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\CaseSensitivityMenuAdmin]
+"MUIVerb"="Case sensitivity (Administrator)"
+"SubCommands"=""
+"Extended"=""
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenuAdmin\Shell\04ViewAdmin]
+"MUIVerb"="View case sensitivity mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenuAdmin\Shell\04ViewAdmin\command]
+@="powershell.exe -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/k fsutil.exe file queryCaseSensitiveInfo \\\"%1\\\"' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenuAdmin\Shell\05EnableAdmin]
+"MUIVerb"="Enable case sensitivity mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenuAdmin\Shell\05EnableAdmin\command]
+@="powershell.exe -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/k fsutil.exe file setCaseSensitiveInfo \\\"%1\\\" enable' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenuAdmin\Shell\06DisableAdmin]
+"MUIVerb"="Disable case sensitivity mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Shell\CaseSensitivityMenuAdmin\Shell\06DisableAdmin\command]
+@="powershell.exe -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/k fsutil.exe file setCaseSensitiveInfo \\\"%1\\\" disable' -Verb RunAs\""
+
+; =========
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenu]
+"MUIVerb"="Case sensitivity"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenu\Shell\01View]
+"MUIVerb"="View case sensitivity mode"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenu\Shell\01View\command]
+@="cmd /k fsutil.exe file queryCaseSensitiveInfo \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenu\Shell\02Enable]
+"MUIVerb"="Enable case sensitivity mode"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenu\Shell\02Enable\command]
+@="cmd /k fsutil.exe file setCaseSensitiveInfo \"%1\" enable"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenu\Shell\03Disable]
+"MUIVerb"="Disable case sensitivity mode"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenu\Shell\03Disable\command]
+@="cmd /k fsutil.exe file setCaseSensitiveInfo \"%1\" disable"
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenuAdmin]
+"MUIVerb"="Case sensitivity (Administrator)"
+"SubCommands"=""
+"Extended"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenuAdmin\Shell\04ViewAdmin]
+"MUIVerb"="View case sensitivity mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenuAdmin\Shell\04ViewAdmin\command]
+@="powershell.exe -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/k fsutil.exe file queryCaseSensitiveInfo \\\"%1\\\"' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenuAdmin\Shell\05EnableAdmin]
+"MUIVerb"="Enable case sensitivity mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenuAdmin\Shell\05EnableAdmin\command]
+@="powershell.exe -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/k fsutil.exe file setCaseSensitiveInfo \\\"%1\\\" enable' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenuAdmin\Shell\06DisableAdmin]
+"MUIVerb"="Disable case sensitivity mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\CaseSensitivityMenuAdmin\Shell\06DisableAdmin\command]
+@="powershell.exe -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/k fsutil.exe file setCaseSensitiveInfo \\\"%1\\\" disable' -Verb RunAs\""
+
+
+
+; =========
+
+[HKEY_CLASSES_ROOT\Drive\shell\CaseSensitivityMenu]
+"MUIVerb"="Case sensitivity"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenu\Shell\01View]
+"MUIVerb"="View case sensitivity mode"
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenu\Shell\01View\command]
+@="cmd /k fsutil.exe file queryCaseSensitiveInfo \"%1\""
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenu\Shell\02Enable]
+"MUIVerb"="Enable case sensitivity mode"
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenu\Shell\02Enable\command]
+@="cmd /k fsutil.exe file setCaseSensitiveInfo \"%1\" enable"
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenu\Shell\03Disable]
+"MUIVerb"="Disable case sensitivity mode"
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenu\Shell\03Disable\command]
+@="cmd /k fsutil.exe file setCaseSensitiveInfo \"%1\" disable"
+
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenuAdmin]
+"MUIVerb"="Case sensitivity (Administrator)"
+"SubCommands"=""
+"Extended"=""
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenuAdmin\Shell\04ViewAdmin]
+"MUIVerb"="View case sensitivity mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenuAdmin\Shell\04ViewAdmin\command]
+@="powershell.exe -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/k fsutil.exe file queryCaseSensitiveInfo \\\"%1\\\"' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenuAdmin\Shell\05EnableAdmin]
+"MUIVerb"="Enable case sensitivity mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenuAdmin\Shell\05EnableAdmin\command]
+@="powershell.exe -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/k fsutil.exe file setCaseSensitiveInfo \\\"%1\\\" enable' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenuAdmin\Shell\06DisableAdmin]
+"MUIVerb"="Disable case sensitivity mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Drive\Shell\CaseSensitivityMenuAdmin\Shell\06DisableAdmin\command]
+@="powershell.exe -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/k fsutil.exe file setCaseSensitiveInfo \\\"%1\\\" disable' -Verb RunAs\""
+
