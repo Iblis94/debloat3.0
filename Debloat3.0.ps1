@@ -3619,8 +3619,9 @@ $WPFTab1P3.Add_Click({
     Add-Type -AssemblyName PresentationFramework
     $xaml = @"
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        Title="More Tweaks" Height="945" Width="305" Background="#FF1A2733">
+        Title="More Tweaks" Height="995" Width="325" Background="#FF1A2733">
     <Grid>
+<ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
         <StackPanel Margin="0,5,0,0" Grid.Column="1">
             <Button Content="Custom ISO" Margin= "0,5,0,0" Foreground="White" BorderBrush="#FF777777" FontWeight="Bold" FontSize="20" Height="50" HorizontalAlignment="Stretch" Grid.ColumnSpan="3" Width="270" Name="MTab14P1">
             <Button.Background>
@@ -3695,6 +3696,18 @@ $WPFTab1P3.Add_Click({
         </Button>
 
         <Button Content="Remove Edge" Margin= "0,5,0,0" Foreground="White" BorderBrush="#FF777777" FontWeight="Bold" Height="50" FontSize="20" HorizontalAlignment="Stretch" Grid.ColumnSpan="3" Width="270" Name="MTab14P7">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF10171E" Offset="1"/>
+                    <GradientStop Color="#FF1A2733" Offset="0.257"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Style>
+                <Style/>
+            </Button.Style>
+        </Button>
+
+        <Button Content="Customize Edge" Margin= "0,5,0,0" Foreground="White" BorderBrush="#FF777777" FontWeight="Bold" Height="50" FontSize="20" HorizontalAlignment="Stretch" Grid.ColumnSpan="3" Width="270" Name="MTab14P18">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF10171E" Offset="1"/>
@@ -3829,7 +3842,8 @@ $WPFTab1P3.Add_Click({
                 <Style/>
             </Button.Style>
         </Button>
-        </StackPanel>           
+        </StackPanel>  
+</ScrollViewer>         
     </Grid>
 </Window>
 "@
@@ -3997,6 +4011,13 @@ $WPFTab1P3.Add_Click({
         Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "PromptOnSecureDesktop" -Type DWord -Value 1
         Write-Host "Default UAC Level"
         [System.Windows.MessageBox]::Show("Set UAC Level to Default", "UAC Level", "OK", [System.Windows.MessageBoxImage]::Information)
+    })
+
+    $window.FindName("MTab14P18").Add_Click({
+        Import-Module BitsTransfer
+        Start-BitsTransfer -Source "https://raw.githubusercontent.com/TheBobPony/MSEdgeTweaker/main/MSEdgeTweaker.cmd" -Destination MSEdgeTweaker.cmd
+        Start-Process MSEdgeTweaker.cmd
+        Write-Host "MSEdgeTweaker is a TheBobPony's Project, check https://github.com/TheBobPony"
     })
 
     $window.ShowDialog() | Out-Null
