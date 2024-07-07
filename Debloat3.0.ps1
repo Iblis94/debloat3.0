@@ -1983,7 +1983,6 @@ $WPFTab1P1.Add_Click({
         Get-AppxPackage -allusers Microsoft.MicrosoftStickyNotes | Remove-AppxPackage
         Get-AppxPackage -allusers Microsoft.MSPaint | Remove-AppxPackage
         Get-AppxPackage -allusers Microsoft.WindowsCamera | Remove-AppxPackage
-        Get-AppxPackage -allusers Microsoft.HEIFImageExtension | Remove-AppxPackage
         Get-AppxPackage -allusers Microsoft.ScreenSketch | Remove-AppxPackage
         Get-AppxPackage -allusers Microsoft.VP9VideoExtensions | Remove-AppxPackage
         Get-AppxPackage -allusers Microsoft.WebMediaExtensions | Remove-AppxPackage
@@ -2797,7 +2796,6 @@ $WPFTab1P2.Add_Click({
     Get-AppxPackage -allusers Microsoft.MicrosoftStickyNotes | Remove-AppxPackage
     Get-AppxPackage -allusers Microsoft.MSPaint | Remove-AppxPackage
     Get-AppxPackage -allusers Microsoft.WindowsCamera | Remove-AppxPackage
-    Get-AppxPackage -allusers Microsoft.HEIFImageExtension | Remove-AppxPackage
     Get-AppxPackage -allusers Microsoft.ScreenSketch | Remove-AppxPackage
     Get-AppxPackage -allusers Microsoft.VP9VideoExtensions | Remove-AppxPackage
     Get-AppxPackage -allusers Microsoft.WebMediaExtensions | Remove-AppxPackage
@@ -4918,7 +4916,6 @@ $WPFTab3P2.Add_Click({
         "Microsoft.MicrosoftStickyNotes"
         "Microsoft.MSPaint"
         "Microsoft.WindowsCamera"
-        "Microsoft.HEIFImageExtension"
         "Microsoft.ScreenSketch"
         "Microsoft.VP9VideoExtensions"
         "Microsoft.WebMediaExtensions"
@@ -4983,13 +4980,14 @@ $WPFTab3P2.Add_Click({
         "MicrosoftCorporationII.QuickAssist"
         "MicrosoftWindows.Client.WebExperience"
         "Clipchamp.Clipchamp"
-        "Microsoft.HEVCVideoExtension"
         "Microsoft.RawImageExtension"
         "Microsoft.Todos"
         "Microsoft.PowerAutomateDesktop"
     )
 
     $global:WhiteListedApps = @(
+        "Microsoft.HEIFImageExtension"
+        "Microsoft.HEVCVideoExtension"
         "Microsoft.Services.Store.Engagement"
         "Microsoft.Services.Store.Engagement"
         "Microsoft.StorePurchaseApp"
