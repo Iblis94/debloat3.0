@@ -3601,6 +3601,9 @@ $WPFTab1P2.Add_Click({
     }
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings" -Name "GlobalUserDisabled" -Type Dword -Value 1
     Write-Host "Disabled Background Apps"
+
+	New-ItemProperty -Path "HKCU:\Software\Classes\CLSID\{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}" -Name "System.IsPinnedToNameSpaceTree" -Value 0 -PropertyType DWord -Force
+    
         Write-Host "Completed"
         $result = [System.Windows.MessageBox]::Show("E' richiesto il riavvio. Vuoi riavviare il sistema?", "Richiesta di riavvio", "YesNo", "Question")
 
