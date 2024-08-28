@@ -1429,6 +1429,15 @@ $inputXML = @"
                                 </Button.BorderBrush>
                                 <Button.BorderThickness>0</Button.BorderThickness>
                             </Button>
+			<Button Content="SuperGodMode" Margin="0,5,0,0" Foreground="White" FontWeight="Bold" Height="20" HorizontalAlignment="Stretch" Width="100" Name="Tab12P42">
+                                <Button.Background>
+                                    <SolidColorBrush Color="#1f272e"/>
+                                </Button.Background>
+                                <Button.BorderBrush>
+                                    <SolidColorBrush Color="Transparent"/>
+                                </Button.BorderBrush>
+                                <Button.BorderThickness>0</Button.BorderThickness>
+                            </Button>
                         </StackPanel>
                         <StackPanel Grid.Column="1">
                         
@@ -9790,6 +9799,9 @@ $WPFTab12P10.Add_Click({
 })
 $WPFTab12P11.Add_Click({
 	Start-Process "https://www.rainmeter.net/"
+})
+$WPFTab12P42.Add_Click({
+	Start-Process "https://github.com/ThioJoe/Windows-Super-God-Mode"
 })
 $WPFTab12P13.Add_Click({
     Add-Type -AssemblyName PresentationFramework
