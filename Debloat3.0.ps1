@@ -1330,7 +1330,7 @@ $inputXML = @"
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Column="0">
                         <TextBlock TextWrapping="Wrap" Text="Customization Software" Foreground="#FF999999" Margin="5,20,0,0" FontWeight="Bold" FontSize="18" Width="140" Height="20" TextAlignment="Center"/>
-                            <Button Content="PowerToys" Margin="0,25,0,0" Foreground="White" FontWeight="Bold" Height="20" HorizontalAlignment="Stretch" Width="100" Name="Tab12P1">
+                            <Button Content="PowerToys" Margin="0,15,0,0" Foreground="White" FontWeight="Bold" Height="20" HorizontalAlignment="Stretch" Width="100" Name="Tab12P1">
                                 <Button.Background>
                                     <SolidColorBrush Color="#1f272e"/>
                                 </Button.Background>
