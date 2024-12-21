@@ -5297,7 +5297,7 @@ $WPFTab3P2.Add_Click({
 })
 
 $WPFTab3P3.Add_Click({
-    Start-Process powershell.exe -Verb RunAs -ArgumentList "Get-AppxPackage -AllUsers| Foreach {Add-AppxPackage -DisableDevelopmentMode -Register “$($_.InstallLocation)\AppXManifest.xml" -Wait -WindowStyle Maximized
+    Start-Process powershell.exe -Verb RunAs -ArgumentList "Get-AppXPackage | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}" -Wait -WindowStyle Maximized
         $WPFResult.ToArray()
     $WPFResult | % { $_ } | Out-Host
     $ButtonType = [System.Windows.MessageBoxButton]::OK
