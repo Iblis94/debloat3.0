@@ -56,7 +56,7 @@ goto :MainMenu
 :Debloat
 cls
 echo "Downloading"
-powershell -command "irm -Uri "https://shorturl.at/auHS4" | iex"
+powershell -command "irm -Uri "https://raw.githubusercontent.com/Iblis94/debloat3.0/main/installstock.ps1" | iex"
 exit
 
 :Custom_iso
