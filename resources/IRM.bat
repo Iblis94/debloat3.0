@@ -67,62 +67,8 @@ powershell -command "PowerShell -ExecutionPolicy Bypass -File \"$env:APPDATA\dow
 exit
 
 :Iso_Pronte
-cls
-echo ___________________________________________________________________
-echo.
-echo 	         WINDOWS ITALIA SCRIPTS - Custom ISO   
-echo ___________________________________________________________________
-echo.
-echo	     ATTENZIONE! Nel Link Onedrive che si aprira' e' presente 
-echo       una versione di RUFUS modificata perche' le Custom ISO
-echo	      non sono compatibili con la versione ufficiale di Rufus
-echo	          e' necessario usare quella per flashare la ISO
-echo.
-echo.
-echo 		          [1] Windows 10
-echo.
-echo.
-echo 			  [2] Windows 11
-echo.
-echo.
-echo 			  [3] Vecchie ISO
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo 			   [0] Indietro 
-echo.
-echo	- - - - - - - - Digita il numero desiderato [1,2,3,0] - - - - - - -
-choice /c:1230 /N
-set _erl=%errorlevel%
 
-if %_erl%==1 goto :win10
-if %_erl%==2 goto :win11
-if %_erl%==3 goto :others
-if %_erl%==4 goto :MainMenu
-goto :Iso_Pronte
-
-:win10
-start "" "https://1drv.ms/f/s!AkZ4mtahaej6kU-wvypG4C8J9bW3?e=zcwf9q"
-exit
-
-:win11
-start "" "https://1drv.ms/u/s!AkZ4mtahaej6kU4iHTUTlb-pYoJm?e=tKE5xl"
-exit
-
-:others
-start "" "https://1drv.ms/f/s!AkZ4mtahaej6kH4_Zk8nXVIxkiJL?e=f6z05c"
+start "" "https://t.me/WindowsItalyISO"
 exit
 
 :Script
