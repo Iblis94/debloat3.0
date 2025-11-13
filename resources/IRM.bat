@@ -72,10 +72,11 @@ start "" "https://t.me/WindowsItalyISO"
 exit
 
 :Script
-powershell -command "irm -Uri "https://raw.githubusercontent.com/daboynb/windows_scripts/refs/heads/main/utilities/utilities_gui.ps1" | iex"
+powershell -command "irm -Uri 'https://raw.githubusercontent.com/daboynb/windows_scripts/refs/heads/main/utilities/utilities_gui.ps1' | iex"
 exit
 
 timeout 04
 exit
+
 
 
