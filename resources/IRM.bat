@@ -72,11 +72,13 @@ start "" "https://t.me/WindowsItalyISO"
 exit
 
 :Script
-powershell -command "irm -Uri 'https://raw.githubusercontent.com/daboynb/windows_scripts/refs/heads/main/utilities/utilities_gui.ps1' | iex"
+powershell -NoProfile -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/daboynb/windows_scripts/refs/heads/main/utilities/utilities_gui.ps1' -OutFile $env:TEMP\utilities_gui.ps1; Start-Process powershell -Verb RunAs -ArgumentList '-NoProfile','-ExecutionPolicy Bypass','-File','$env:TEMP\utilities_gui.ps1'"
+
 exit
 
 timeout 04
 exit
+
 
 
 
