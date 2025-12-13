@@ -38,7 +38,6 @@ echo.
 echo				     [0] EXIT
 echo.
 echo.
-echo.
 echo	- - - - - - - Digita il numero desiderato [1,2,3,4,0] - - - - - - -
 choice /C:12340 /N
 set _erl=%errorlevel%
@@ -68,6 +67,7 @@ exit
 
 timeout 04
 exit
+
 
 
 
