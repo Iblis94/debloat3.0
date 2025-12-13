@@ -20,7 +20,7 @@ echo	    Potrai scegliere tra Preset ottimizzati per Windows 10 e 11
 echo	      oppure selezionare manualmente cosa disattivare/attivare
 echo.
 echo.
-echo 			  [2] Script
+echo 			     [2] Script
 echo.
 echo	          Utilizza questi script per rendere il tuo OS più
 echo	      performante e potrai anche disattivare Windows Defender 
@@ -66,6 +66,7 @@ exit
 
 timeout 04
 exit
+
 
 
 
