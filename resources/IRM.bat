@@ -4,7 +4,7 @@ cd /d %~dp0
 
 :MainMenu
 cls
-mode 60, 38
+mode 67, 35
 title Windows Italia Scripts
 cls
 echo ___________________________________________________________________
@@ -16,13 +16,13 @@ echo.
 echo 		            [1] Debloat
 echo.
 echo          Script per eliminare bloatware e alleggerire il PC
-echo	    Potrai scegliere tra Preset ottimizzati per Windows 10 e 11
+echo	        Potrai scegliere tra Preset ottimizzati per Windows
 echo	      oppure selezionare manualmente cosa disattivare/attivare
 echo.
 echo.
 echo 			     [2] Script
 echo.
-echo	          Utilizza questi script per rendere il tuo OS più
+echo	          Utilizza questi script per rendere il tuo OS piu'
 echo	      performante e potrai anche disattivare Windows Defender 
 echo                     e rimuovere Microsoft Edge
 echo.
@@ -36,6 +36,8 @@ echo.
 echo.
 echo.
 echo				     [0] EXIT
+echo.
+echo.
 echo.
 echo	- - - - - - - Digita il numero desiderato [1,2,3,4,0] - - - - - - -
 choice /C:12340 /N
@@ -55,8 +57,8 @@ exit
 
 :Script
 cls
-echo "Downloading"
-powershell -command "irm -Uri "https://raw.githubusercontent.com/daboynb/windows_scripts/refs/heads/main/utilities/utilities_gui.ps1" | iex"
+powershell -Command "Start-Process powershell -Verb RunAs -ArgumentList '-Command irm https://raw.githubusercontent.com/daboynb/windows_scripts/refs/heads/main/utilities/utilities_gui.ps1 | iex'"
+
 exit
 
 
