@@ -4,7 +4,7 @@ cd /d %~dp0
 
 :MainMenu
 cls
-mode 67, 38
+mode 60, 38
 title Windows Italia Scripts
 cls
 echo ___________________________________________________________________
@@ -66,6 +66,7 @@ exit
 
 timeout 04
 exit
+
 
 
 
